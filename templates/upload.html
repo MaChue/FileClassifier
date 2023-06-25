@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        input[type=file],
+        input[type=submit] {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        input[type=submit] {
+            width: 70px;
+            background-color: #007AFF;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>File Upload</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="files[]" multiple><br>
+            <input class="btn btn-primary" type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>
