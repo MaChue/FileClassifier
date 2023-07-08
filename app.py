@@ -8,10 +8,15 @@ app = Flask(__name__)
 # The list of file extensions is chosen based on common malicious file types.
 # This list can be modified to fit the specific security needs of the application.
 suspicious_file_types = ['.exe', '.com', '.bat', '.cmd', '.scr', '.msi', '.pif', '.gadget',
-                         '.js', '.jse', '.vb', '.vbe', '.ws', '.wsf', '.wsc', '.wsh', '.ps1', '.ps1xml', '.ps2', '.ps2xml', '.psc1', '.psc2', '.msh', '.msh1', '.msh2', '.mshxml', '.msh1xml', '.msh2xml', '.scf', '.lnk', '.inf', '.reg',
-                         '.docm', '.xlsm', '.pptm', '.dotm', '.xltm', '.potm', '.sldm', '.ppam', '.ppsm', '.sldm', '.accde', '.ade', '.adp', '.accdc', '.adn', '.accdr', '.accdu', '.ashx', '.aspx', '.asp', '.cer', '.crt', '.crl', '.der', '.asx', '.wax', '.m3u', '.wvx', '.wmx',
+                         '.js', '.jse', '.vb', '.vbe', '.ws', '.wsf', '.wsc', '.wsh', '.ps1', '.ps1xml', '.ps2', '.ps2xml', 
+                         '.psc1', '.psc2', '.msh', '.msh1', '.msh2', '.mshxml', '.msh1xml', '.msh2xml', '.scf', '.lnk', '.inf', '.reg',
+                         '.docm', '.xlsm', '.pptm', '.dotm', '.xltm', '.potm', '.sldm', '.ppam', '.ppsm', '.sldm', 
+                         '.accde', '.ade', '.adp', '.accdc', '.adn', '.accdr', '.accdu', '.ashx', '.aspx', '.asp', 
+                         '.cer', '.crt', '.crl', '.der', '.asx', '.wax', '.m3u', '.wvx', '.wmx',
                          '.website', '.mcf', '.library-ms', '.lnk', '.settings', '.pif', '.ins', '.isp', '.url',
-                         '.gadget', '.msp', '.cpl', '.msc', '.jar', '.cmd', '.bat', '.vbs', '.vbe', '.jse', '.ws', '.wsf', '.wsc', '.wsh', '.ps1', '.ps1xml', '.ps2', '.ps2xml', '.psc1', '.psc2', '.msh', '.msh1', '.msh2', '.mshxml', '.msh1xml', '.msh2xml']
+                         '.gadget', '.msp', '.cpl', '.msc', '.jar', '.cmd', '.bat', '.vbs', '.vbe', '.jse', '.ws', 
+                         '.wsf', '.wsc', '.wsh', '.ps1', '.ps1xml', '.ps2', '.ps2xml', '.psc1', '.psc2', 
+                         '.msh', '.msh1', '.msh2', '.mshxml', '.msh1xml', '.msh2xml']
 
 @app.route('/')
 def upload_file():
